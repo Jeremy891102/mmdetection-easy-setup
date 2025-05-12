@@ -1,5 +1,7 @@
 # 簡易 MMDetection 安裝指南
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 這個倉庫提供了簡化的 MMDetection 安裝方法，專為新手設計，解決常見的環境配置問題。
 
 [English](./README_en.md) | 中文
@@ -113,5 +115,5 @@ print(f"CUDA 是否可用: {torch.cuda.is_available()}")
 
 ## 📜 許可
 
-本項目採用 MIT 許可證 - 查看 [LICENSE](LICENSE) 文件了解詳情。
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 

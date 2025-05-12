@@ -1,6 +1,6 @@
 # Easy MMDetection Setup
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This repository provides a simplified approach to install MMDetection, designed for beginners to solve common environment configuration issues.
 
@@ -120,7 +120,7 @@ If you find any issues or have suggestions for improvements, please feel free to
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
