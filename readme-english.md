@@ -1,0 +1,128 @@
+# Easy MMDetection Setup
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This repository provides a simplified approach to install MMDetection, designed for beginners to solve common environment configuration issues.
+
+[中文](./README.md) | English
+
+## 🌟 Features
+
+- ✅ Pre-configured environment files, no need to solve dependency issues manually
+- ✅ Detailed step-by-step instructions for first-time users
+- ✅ Automated installation scripts for one-click setup
+- ✅ Avoids common errors and pitfalls
+
+## 📋 Requirements
+
+- Python 3.7+ (Python 3.8 recommended)
+- CUDA 11.0+ (for GPU users, not required for CPU-only usage)
+- Sufficient disk space (at least 5GB)
+
+## 🚀 Quick Installation
+
+### Method 1: Using pip (requirements.txt)
+
+```bash
+# 1. Clone this repository
+git clone https://github.com/yourusername/easy-mmdetection-setup.git
+cd easy-mmdetection-setup
+
+# 2. Create virtual environment
+python -m venv mmdet_env
+source mmdet_env/bin/activate  # Linux/Mac
+# or
+mmdet_env\Scripts\activate  # Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Verify installation
+python verify_install.py
+```
+
+### Method 2: Using Conda (environment.yml)
+
+```bash
+# 1. Clone this repository
+git clone https://github.com/yourusername/easy-mmdetection-setup.git
+cd easy-mmdetection-setup
+
+# 2. Create and activate Conda environment
+conda env create -f environment.yml
+conda activate mmdet
+
+# 3. Verify installation
+python verify_install.py
+```
+
+### Method 3: One-click Installation Script
+
+```bash
+# Linux/Mac
+./install.sh
+
+# Windows
+install.bat
+```
+
+## 🔍 Verify Installation
+
+After successful installation, run the following test:
+
+```python
+# Execute in Python
+import mmdet
+import torch
+
+print(f"MMDetection version: {mmdet.__version__}")
+print(f"PyTorch version: {torch.__version__}")
+print(f"CUDA available: {torch.cuda.is_available()}")
+```
+
+## 📝 Getting Started Tutorial
+
+After installation, check out the [Getting Started Guide](./getting_started_en.md) to learn how to:
+
+1. Run your first object detection
+2. Use pre-trained models for inference
+3. Train with your own dataset
+4. See example code for common tasks
+
+## ❓ Common Issues & Solutions
+
+<details>
+<summary>Getting "CUDA error: ..." during installation</summary>
+This usually indicates that the PyTorch version doesn't match your CUDA version. Make sure to use a PyTorch build that matches your system's CUDA version. You can find compatible versions at the <a href="https://pytorch.org/get-started/locally/">PyTorch website</a>.
+</details>
+
+<details>
+<summary>ImportError: cannot import name 'XXXX' from 'mmdet'</summary>
+This typically happens when MMCV and MMDetection versions are not compatible. Please ensure you're using our provided environment files where the versions have been tested for compatibility.
+</details>
+
+<details>
+<summary>Out of memory errors during training</summary>
+Try reducing the batch size in your config file, or use a smaller input image size. You can also try using a lighter model architecture.
+</details>
+
+## 📊 Tested Environments
+
+This installation method has been tested on:
+
+- Ubuntu 20.04 + CUDA 11.3
+- Windows 10 + CUDA 11.6
+- macOS Monterey (CPU mode only)
+
+## 👥 Contributing
+
+If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- [MMDetection](https://github.com/open-mmlab/mmdetection) - For creating this amazing object detection toolbox
+- [OpenMMLab](https://openmmlab.com/) - For their continued contributions to the computer vision community
