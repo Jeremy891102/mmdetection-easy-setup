@@ -39,7 +39,7 @@ cd easy-mmdetection-setup
 
 # 2. Create and activate Conda environment
 conda env create -f environment.yml
-conda activate mmdet
+conda activate mmdetection_easy_setup
 
 # 3. Verify installation
 python verify_install.py
@@ -53,10 +53,10 @@ git clone https://github.com/yourusername/easy-mmdetection-setup.git
 cd easy-mmdetection-setup
 
 # 2. Create virtual environment
-python -m venv mmdet_env
-source mmdet_env/bin/activate  # Linux/Mac
+python -m venv mmdetection_easy_setup
+source mmdetection_easy_setup/bin/activate  # Linux/Mac
 # or
-mmdet_env\Scripts\activate  # Windows
+mmdetection_easy_setup\Scripts\activate  # Windows
 
 # 3. Install dependencies
 pip install -r requirements.txt
