@@ -33,76 +33,75 @@
 ## 🚀 快速安裝
 
 ### 方法 1：使用 Conda (environment.yml)(推薦方法)
-
+1. clone此倉庫
 ```bash
-# 1. 克隆此倉庫
 git clone https://github.com/Jeremy891102/mmdetection-easy-setup.git
 cd mmdetection-easy-setup
 ```
+2. 創建並激活 Conda 環境
 ```bash
-# 2. 創建並激活 Conda 環境
 conda env create -f environment.yml
 conda activate mmdetection_easy_setup
 ```
+3. 使用官方推薦方式安裝套件
 ```bash
-# 3. 使用官方推薦方式安裝套件
 mim install mmengine
 mim install "mmcv==2.1.0"
 ```
+4. 安裝 mmdet
+>方法1. 如果直接開發並執行 mmdet，請從原始程式碼安裝它：
 ```bash
-# 4. 安裝 mmdet
-方法1. 如果直接開發並執行 mmdet，請從原始程式碼安裝它：
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
 pip install -v -e . -r requirements/tracking.txt
 # "-v" means verbose, or more output
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
-
-方法2. 如果您使用 mmdet 作為依賴項或第三方套件，請使用 MIM 安裝它：
+```
+>方法2. 如果您使用 mmdet 作為依賴項或第三方套件，請使用 MIM 安裝它：
+```bash
 mim install mmdet
 ```
-```bash
-# 5. 驗證安裝
-python verify_install.py
-```
+### 接下來可以驗證安裝！
 
 ### 方法 2：使用 pip (requirements.txt)
-
+1. 克隆此倉庫
 ```bash
-# 1. 克隆此倉庫
 git clone https://github.com/Jeremy891102/mmdetection-easy-setup.git
 cd mmdetection-easy-setup
 ```
+2. 創建虛擬環境
 ```bash
-# 2. 創建虛擬環境
 python -m venv mmdetection_easy_setup
 source mmdetection_easy_setup/bin/activate  # Linux/Mac
 # 或
 mmdetection_easy_setup\Scripts\activate  # Windows
 ```
+3. 安裝依賴
 ```bash
-# 3. 安裝依賴
 pip install -r requirements.txt
 ```
+4. 使用 mim 安裝 MMEngine 與 MMCV
 ```bash
-# 4. 使用 mim 安裝 MMEngine 與 MMCV
 mim install mmengine
 mim install "mmcv==2.1.0"
 ```
+5. 安裝 mmdet
+>方法1. 如果直接開發並執行 mmdet，請從原始程式碼安裝它：
 ```bash
-# 5. 安裝 mmdet
-方法1. 如果直接開發並執行 mmdet，請從原始程式碼安裝它：
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
 pip install -v -e . -r requirements/tracking.txt
 # "-v" means verbose, or more output
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
-
-方法2. 如果您使用 mmdet 作為依賴項或第三方套件，請使用 MIM 安裝它：
+```
+>方法2. 如果您使用 mmdet 作為依賴項或第三方套件，請使用 MIM 安裝它：
+```bash
 mim install mmdet
 ```
+### 接下來可以驗證安裝！
+
 ```bash
 # 6. 驗證安裝
 python verify_install.py
@@ -121,7 +120,12 @@ install.bat
 ## 🔍 驗證安裝
 
 成功安裝後，執行以下測試：
-
+>方法1. 執行verify_install_env.py來驗證：
+```bash
+cd ./mmdetection-easy-setup
+python verify_install_env.py
+```
+>方法2. 執行python程式碼來驗證：
 ```python
 # 在 Python 中執行
 import mmdet
