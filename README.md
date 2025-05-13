@@ -36,11 +36,13 @@ This repository provides a simplified approach to installing MMDetection, design
 # 1. Clone this repository
 git clone https://github.com/yourusername/mmdetection-easy-setup.git
 cd mmdetection-easy-setup
-
+```
+```bash
 # 2. Create and activate Conda environment
 conda env create -f environment.yml
 conda activate mmdetection_easy_setup
-
+```
+```bash
 # 3. Verify installation
 python verify_install.py
 ```
@@ -51,16 +53,19 @@ python verify_install.py
 # 1. Clone this repository
 git clone https://github.com/yourusername/easy-mmdetection-setup.git
 cd easy-mmdetection-setup
-
+```
+```bash
 # 2. Create virtual environment
 python -m venv mmdetection_easy_setup
 source mmdetection_easy_setup/bin/activate  # Linux/Mac
 # or
 mmdetection_easy_setup\Scripts\activate  # Windows
-
+```
+```bash
 # 3. Install dependencies
 pip install -r requirements.txt
-
+```
+```bash
 # 4. Verify installation
 python verify_install.py
 ```
