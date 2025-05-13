@@ -147,3 +147,7 @@ print(f"CUDA 是否可用: {torch.cuda.is_available()}")
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
+## 🙏 Acknowledgements
+
+- [MMDetection](https://github.com/open-mmlab/mmdetection) - For creating this amazing object detection toolbox
+- [OpenMMLab](https://openmmlab.com/) - For their continued contributions to the computer vision community
