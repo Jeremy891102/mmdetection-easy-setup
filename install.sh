@@ -1,35 +1,41 @@
 #!/bin/bash
-# 簡易 MMDetection 安裝腳本 (Linux/Mac)
+# MMDetection environment installation script (Linux/Mac)
 
-echo "=== 開始安裝 MMDetection 環境 ==="
+echo "=== starting to install MMDetection environment ==="
 
-# 檢查 Python 是否已安裝
+# check if python is installed
 if ! command -v python &> /dev/null; then
-    echo "錯誤: 找不到 Python，請先安裝 Python 3.7+"
+    echo "Error: Python not found, please install Python 3.7+"
     exit 1
 fi
 
-# 檢查 pip 是否已安裝
+# check if pip is installed
 if ! command -v pip &> /dev/null; then
-    echo "錯誤: 找不到 pip，請先安裝 pip"
+    echo "Error: pip not found, please install pip"
     exit 1
 fi
 
-# 建立虛擬環境
-echo "正在創建虛擬環境..."
+# create virtual environment
+echo "creating virtual environment..."
 python -m venv mmdet_env
 
-# 啟動虛擬環境
-echo "正在啟動虛擬環境..."
+# activate virtual environment
+echo "activating virtual environment..."
 source mmdet_env/bin/activate
 
-# 安裝依賴
-echo "正在安裝依賴項..."
+# install dependencies
+echo "installing dependencies..."
 pip install -r requirements.txt
 
-# 驗證安裝
-echo "正在驗證安裝..."
-python verify_install.py
+# install mmdetection dependencies
+echo "installing mmdetection dependencies..."
+mim install mmengine
+mim install "mmcv==2.1.0"
+mim install mmdet
 
-echo "=== MMDetection 環境安裝完成! ==="
-echo "請使用 'source mmdet_env/bin/activate' 來啟動環境"
+# verify installation
+echo "verifying installation..."
+python verify_install_env.py
+
+echo "=== MMDetection environment installed! ==="
+echo "please use 'source mmdet_env/bin/activate' to activate the environment"

@@ -1,4 +1,4 @@
-name: openmmlab
+name: mmdetection
 channels:
   - pytorch
   - nvidia
@@ -155,8 +155,6 @@ dependencies:
       - matplotlib==3.7.5
       - mdurl==0.1.2
       - mistune==3.0.2
-      - mmcv==2.1.0
-      - mmengine==0.10.5
       - model-index==0.1.11
       - nbclient==0.10.1
       - nbconvert==7.16.4
@@ -213,4 +211,3 @@ dependencies:
       - yapf==0.43.0
       - yarg==0.1.9
       - zipp==3.20.2
-

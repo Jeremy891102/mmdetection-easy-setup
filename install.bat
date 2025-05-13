@@ -1,28 +1,34 @@
 @echo off
-echo === 開始安裝 MMDetection 環境 ===
+echo === installing MMDetection environment ===
 
-REM 檢查 Python 是否已安裝
+REM check if python is installed
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo 錯誤: 找不到 Python，請先安裝 Python 3.7+
+    echo Error: Python not found, please install Python 3.7+
     exit /b 1
 )
 
-REM 建立虛擬環境
-echo 正在創建虛擬環境...
+REM create virtual environment
+echo creating virtual environment...
 python -m venv mmdet_env
 
-REM 啟動虛擬環境
-echo 正在啟動虛擬環境...
+REM activate virtual environment
+echo activating virtual environment...
 call mmdet_env\Scripts\activate
 
-REM 安裝依賴
-echo 正在安裝依賴項...
+REM install dependencies
+echo installing dependencies...
 pip install -r requirements.txt
 
-REM 驗證安裝
-echo 正在驗證安裝...
-python verify_install.py
+REM install mmdetection dependencies
+echo installing mmdetection dependencies...
+mim install mmengine
+mim install "mmcv==2.1.0"
+mim install mmdet
 
-echo === MMDetection 環境安裝完成! ===
-echo 請使用 'mmdet_env\Scripts\activate' 來啟動環境
+REM verify installation
+echo verifying installation...
+python verify_install_env.py
+
+echo === MMDetection environment installed! ===
+echo please use 'mmdet_env\Scripts\activate' to activate the environment
