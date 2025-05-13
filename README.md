@@ -101,10 +101,6 @@ This usually indicates that the PyTorch version doesn't match your CUDA version.
 This typically happens when MMCV and MMDetection versions are not compatible. Please ensure you're using our provided environment files where the versions have been tested for compatibility.
 </details>
 
-<details>
-<summary>Out of memory errors during training</summary>
-Try reducing the batch size in your config file, or use a smaller input image size. You can also try using a lighter model architecture.
-</details>
 
 ## 📊 Tested Environments
 
