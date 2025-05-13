@@ -120,7 +120,7 @@ This typically happens when MMCV and MMDetection versions are not compatible. Pl
 
 This installation method has been tested on:
 
-- Windows 10 + CUDA 11.8
+- Windows 11 + CUDA 11.8
 
 ## 👥 Contributing
 
