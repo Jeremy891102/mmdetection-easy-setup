@@ -4,7 +4,7 @@
 
 This repository provides a simplified approach to install MMDetection, designed for beginners to solve common environment configuration issues.
 
-[中文](./README.md) | English
+[中文](./README_zh.md) | English
 
 ## 🌟 Features
 
