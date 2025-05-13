@@ -157,7 +157,7 @@ print(f"CUDA 是否可用: {torch.cuda.is_available()}")
 
 此安裝方法已在以下環境中測試通過：
 
-- Windows 10 + CUDA 11.8
+- Windows 11 + CUDA 11.8
 
 ## 👥 貢獻
 
