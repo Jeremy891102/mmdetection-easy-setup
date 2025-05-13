@@ -1,4 +1,4 @@
-name: mmdetection
+name: mmdetection_easy_setup
 channels:
   - pytorch
   - nvidia
