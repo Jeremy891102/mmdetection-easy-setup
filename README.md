@@ -34,8 +34,8 @@ This repository provides a simplified approach to install MMDetection, designed 
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/yourusername/easy-mmdetection-setup.git
-cd easy-mmdetection-setup
+git clone https://github.com/yourusername/mmdetection-easy-setup.git
+cd mmdetection-easy-setup
 
 # 2. Create and activate Conda environment
 conda env create -f environment.yml
