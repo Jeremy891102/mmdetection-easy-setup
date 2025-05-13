@@ -31,44 +31,79 @@ This repository provides a simplified approach to installing MMDetection, design
 ## 🚀 Quick Installation
 
 ### Method 1: Using Conda (environment.yml) (Recommend)
-
+1. Clone this repository
 ```bash
-# 1. Clone this repository
 git clone https://github.com/yourusername/mmdetection-easy-setup.git
 cd mmdetection-easy-setup
 ```
+2. Create and activate Conda environment
 ```bash
-# 2. Create and activate Conda environment
 conda env create -f environment.yml
 conda activate mmdetection_easy_setup
 ```
+3. Use mim install mmengine and mmcv
 ```bash
-# 3. Verify installation
-python verify_install.py
+mim install mmengine
+mim install "mmcv==2.1.0"
 ```
+4. Install mmdet
+
+
+Case a: If you develop and run mmdet directly, install it from source:
+```bash
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -v -e .
+# "-v" means verbose, or more output
+# "-e" means installing a project in editable mode,
+# thus any local modifications made to the code will take effect without reinstallation.
+```
+Case b: If you use mmdet as a dependency or third-party package, install it with MIM:
+```bash
+mim install mmdet
+```
+### Now you can verify the installation
 
 ### Method 2: Using pip (requirements.txt)
 
+1. Clone this repository
 ```bash
-# 1. Clone this repository
 git clone https://github.com/yourusername/easy-mmdetection-setup.git
 cd easy-mmdetection-setup
 ```
+2. Create virtual environment
 ```bash
-# 2. Create virtual environment
 python -m venv mmdetection_easy_setup
 source mmdetection_easy_setup/bin/activate  # Linux/Mac
 # or
 mmdetection_easy_setup\Scripts\activate  # Windows
 ```
+3. Install dependencies
 ```bash
-# 3. Install dependencies
 pip install -r requirements.txt
 ```
+4. Use mim install mmengine and mmcv
 ```bash
-# 4. Verify installation
-python verify_install.py
+mim install mmengine
+mim install "mmcv==2.1.0"
 ```
+5. Install mmdet
+
+
+Case a: If you develop and run mmdet directly, install it from source:
+```bash
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -v -e .
+# "-v" means verbose, or more output
+# "-e" means installing a project in editable mode,
+# thus any local modifications made to the code will take effect without reinstallation.
+```
+Case b: If you use mmdet as a dependency or third-party package, install it with MIM:
+```bash
+mim install mmdet
+```
+### Now you can verify the installation
 
 ### Method 3: One-click Installation Script
 
@@ -83,6 +118,11 @@ install.bat
 ## 🔍 Verify Installation
 
 After successful installation, run the following test:
+
+```bash
+cd ./mmdetection-easy-setup
+python verify_install_env.py
+```
 
 ```python
 # Execute in Python
