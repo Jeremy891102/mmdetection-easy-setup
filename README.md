@@ -49,7 +49,7 @@ mim install "mmcv==2.1.0"
 4. Install mmdet
 
 
-Case a: If you develop and run mmdet directly, install it from source:
+>Case a: If you develop and run mmdet directly, install it from source:
 ```bash
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
@@ -58,11 +58,11 @@ pip install -v -e .
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
 ```
-Case b: If you use mmdet as a dependency or third-party package, install it with MIM:
+>Case b: If you use mmdet as a dependency or third-party package, install it with MIM:
 ```bash
 mim install mmdet
 ```
-### Now you can verify the installation
+### ✅ Now you can verify the installation
 
 ### Method 2: Using pip (requirements.txt)
 
@@ -90,7 +90,7 @@ mim install "mmcv==2.1.0"
 5. Install mmdet
 
 
-Case a: If you develop and run mmdet directly, install it from source:
+>Case a: If you develop and run mmdet directly, install it from source:
 ```bash
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
@@ -99,11 +99,11 @@ pip install -v -e .
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
 ```
-Case b: If you use mmdet as a dependency or third-party package, install it with MIM:
+>Case b: If you use mmdet as a dependency or third-party package, install it with MIM:
 ```bash
 mim install mmdet
 ```
-### Now you can verify the installation
+### ✅ Now you can verify the installation
 
 ### Method 3: One-click Installation Script
 
