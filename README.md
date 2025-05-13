@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This repository provides a simplified approach to installing MMDetection, designed for beginners to solve common environment configuration issues like CUDA error, mmcv, mmdet setup error, and dependency conflict error.
+This repository provides a simplified approach to installing MMDetection, designed for beginners to solve common environment configuration issues like **CUDA error, mmcv, mmdet setup error, and dependency conflict error.**
 
 [中文](./README_zh.md) | English
 
