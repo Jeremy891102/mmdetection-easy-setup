@@ -15,13 +15,28 @@ This repository provides a simplified approach to install MMDetection, designed 
 
 ## 📋 Requirements
 
-- Python 3.7+ (Python 3.8 recommended)
-- CUDA 11.0+ (for GPU users, not required for CPU-only usage)
+- Python 3.7+
+- CUDA 11.8+
 - Sufficient disk space (at least 5GB)
 
 ## 🚀 Quick Installation
 
-### Method 1: Using pip (requirements.txt)
+### Method 1: Using Conda (environment.yml) (Recommend)
+
+```bash
+# 1. Clone this repository
+git clone https://github.com/yourusername/easy-mmdetection-setup.git
+cd easy-mmdetection-setup
+
+# 2. Create and activate Conda environment
+conda env create -f environment.yml
+conda activate mmdet
+
+# 3. Verify installation
+python verify_install.py
+```
+
+### Method 2: Using pip (requirements.txt)
 
 ```bash
 # 1. Clone this repository
@@ -38,21 +53,6 @@ mmdet_env\Scripts\activate  # Windows
 pip install -r requirements.txt
 
 # 4. Verify installation
-python verify_install.py
-```
-
-### Method 2: Using Conda (environment.yml)
-
-```bash
-# 1. Clone this repository
-git clone https://github.com/yourusername/easy-mmdetection-setup.git
-cd easy-mmdetection-setup
-
-# 2. Create and activate Conda environment
-conda env create -f environment.yml
-conda activate mmdet
-
-# 3. Verify installation
 python verify_install.py
 ```
 
@@ -110,9 +110,7 @@ Try reducing the batch size in your config file, or use a smaller input image si
 
 This installation method has been tested on:
 
-- Ubuntu 20.04 + CUDA 11.3
 - Windows 10 + CUDA 11.6
-- macOS Monterey (CPU mode only)
 
 ## 👥 Contributing
 
