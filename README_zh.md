@@ -32,7 +32,23 @@ cd mmdetection-east-setup
 conda env create -f environment.yml
 conda activate mmdet
 
-# 3. 驗證安裝
+# 3. 使用官方推薦方式安裝套件
+mim install mmengine
+mim install "mmcv==2.1.0"
+
+# 4. 安裝 mmdet
+方法1. 如果直接開發並執行 mmdet，請從原始程式碼安裝它：
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -v -e . -r requirements/tracking.txt
+# "-v" means verbose, or more output
+# "-e" means installing a project in editable mode,
+# thus any local modifications made to the code will take effect without reinstallation.
+
+方法2. 如果您使用 mmdet 作為依賴項或第三方套件，請使用 MIM 安裝它：
+mim install mmdet
+
+# 5. 驗證安裝
 python verify_install.py
 ```
 
@@ -52,7 +68,23 @@ mmdet_env\Scripts\activate  # Windows
 # 3. 安裝依賴
 pip install -r requirements.txt
 
-# 4. 驗證安裝
+# 4. 使用 mim 安裝 MMEngine 與 MMCV
+mim install mmengine
+mim install "mmcv==2.1.0"
+
+# 5. 安裝 mmdet
+方法1. 如果直接開發並執行 mmdet，請從原始程式碼安裝它：
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -v -e . -r requirements/tracking.txt
+# "-v" means verbose, or more output
+# "-e" means installing a project in editable mode,
+# thus any local modifications made to the code will take effect without reinstallation.
+
+方法2. 如果您使用 mmdet 作為依賴項或第三方套件，請使用 MIM 安裝它：
+mim install mmdet
+
+# 6. 驗證安裝
 python verify_install.py
 ```
 
