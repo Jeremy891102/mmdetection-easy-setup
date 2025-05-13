@@ -82,7 +82,7 @@ print(f"CUDA available: {torch.cuda.is_available()}")
 
 ## 📝 Getting Started Tutorial
 
-After installation, check out the [Getting Started Guide](https://mmdetection.readthedocs.io/en/latest/get_started.html)) to learn how to:
+After installation, check out MMdetection [Getting Started Guide](https://mmdetection.readthedocs.io/en/latest/get_started.html) to learn how to:
 
 1. Run your first object detection
 2. Use pre-trained models for inference
