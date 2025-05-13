@@ -15,9 +15,18 @@ This repository provides a simplified approach to install MMDetection, designed 
 
 ## 📋 Requirements
 
-- Python 3.7+
-- CUDA 11.8+
+- Python 3.8
+- CUDA 11.8
 - Sufficient disk space (at least 5GB)
+
+> ⚠️ If you plan to use a different version (e.g., Python 3.10 or CUDA 12),  
+> please manually align compatible versions of **PyTorch**, **MMCV**, and **MMEngine** to avoid conflicts.  
+> Incompatible versions may cause installation issues or runtime errors.  
+>
+> ✅ Recommended references:
+> - [PyTorch Installation Guide](https://pytorch.org/get-started/locally/)
+> - [MMCV Compatibility Table](https://github.com/open-mmlab/mmcv#installation)
+> - [MMEngine Documentation](https://github.com/open-mmlab/mmengine)
 
 ## 🚀 Quick Installation
 
