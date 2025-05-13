@@ -15,33 +15,13 @@
 
 ## 📋 環境需求
 
-- Python 3.7+ (推薦 3.8)
-- CUDA 11.0+ (針對 GPU 使用者，如果使用 CPU 則不需要)
+- Python 3.8+
+- CUDA 11.8+
 - 足夠的磁碟空間（至少 5GB）
 
 ## 🚀 快速安裝
 
-### 方法 1：使用 pip (requirements.txt)
-
-```bash
-# 1. 克隆此倉庫
-git clone https://github.com/Jeremy891102/mmdetection-easy-setup.git
-cd mmdetection-east-setup
-
-# 2. 創建虛擬環境
-python -m venv mmdet_env
-source mmdet_env/bin/activate  # Linux/Mac
-# 或
-mmdet_env\Scripts\activate  # Windows
-
-# 3. 安裝依賴
-pip install -r requirements.txt
-
-# 4. 驗證安裝
-python verify_install.py
-```
-
-### 方法 2：使用 Conda (environment.yml)
+### 方法 1：使用 Conda (environment.yml)(推薦方法)
 
 ```bash
 # 1. 克隆此倉庫
@@ -53,6 +33,26 @@ conda env create -f environment.yml
 conda activate mmdet
 
 # 3. 驗證安裝
+python verify_install.py
+```
+
+### 方法 2：使用 pip (requirements.txt)
+
+```bash
+# 1. 克隆此倉庫
+git clone https://github.com/Jeremy891102/mmdetection-easy-setup.git
+cd mmdetection-easy-setup
+
+# 2. 創建虛擬環境
+python -m venv mmdet_env
+source mmdet_env/bin/activate  # Linux/Mac
+# 或
+mmdet_env\Scripts\activate  # Windows
+
+# 3. 安裝依賴
+pip install -r requirements.txt
+
+# 4. 驗證安裝
 python verify_install.py
 ```
 
@@ -105,9 +105,7 @@ print(f"CUDA 是否可用: {torch.cuda.is_available()}")
 
 此安裝方法已在以下環境中測試通過：
 
-- Ubuntu 20.04 + CUDA 11.3
-- Windows 10 + CUDA 11.6
-- macOS Monterey (僅 CPU 模式)
+- Windows 10 + CUDA 11.8
 
 ## 👥 貢獻
 
