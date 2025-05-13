@@ -35,7 +35,7 @@
 ```bash
 # 1. 克隆此倉庫
 git clone https://github.com/Jeremy891102/mmdetection-easy-setup.git
-cd mmdetection-east-setup
+cd mmdetection-easy-setup
 
 # 2. 創建並激活 Conda 環境
 conda env create -f environment.yml
