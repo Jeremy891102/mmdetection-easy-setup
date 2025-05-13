@@ -4,7 +4,7 @@
 
 這個倉庫提供了簡化的 MMDetection 安裝方法，專為新手設計，解決常見的環境配置問題。
 
-[English](./README_en.md) | 中文
+[English](./README.md) | 中文
 
 ## 🌟 特點
 
