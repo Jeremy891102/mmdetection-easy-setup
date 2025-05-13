@@ -69,10 +69,10 @@ git clone https://github.com/Jeremy891102/mmdetection-easy-setup.git
 cd mmdetection-easy-setup
 
 # 2. 創建虛擬環境
-python -m venv mmdet_env
-source mmdet_env/bin/activate  # Linux/Mac
+python -m venv mmdetection_easy_setup
+source mmdetection_easy_setup/bin/activate  # Linux/Mac
 # 或
-mmdet_env\Scripts\activate  # Windows
+mmdetection_easy_setup\Scripts\activate  # Windows
 
 # 3. 安裝依賴
 pip install -r requirements.txt
