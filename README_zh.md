@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-這個倉庫提供了簡化的 MMDetection 安裝方法，專為新手設計，解決常見的環境配置問題。
+這個倉庫提供了簡化的 MMDetection 安裝方法，專為新手設計，解決常見的CUDA error, mmcv, mmdet setup和版本衝突的問題。
 
 [English](./README.md) | 中文
 
