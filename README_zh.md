@@ -39,7 +39,7 @@ cd mmdetection-east-setup
 
 # 2. 創建並激活 Conda 環境
 conda env create -f environment.yml
-conda activate mmdet
+conda activate mmdetection_easy_setup
 
 # 3. 使用官方推薦方式安裝套件
 mim install mmengine
