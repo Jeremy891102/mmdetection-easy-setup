@@ -82,7 +82,7 @@ print(f"CUDA available: {torch.cuda.is_available()}")
 
 ## 📝 Getting Started Tutorial
 
-After installation, check out the [Getting Started Guide](./getting_started_en.md) to learn how to:
+After installation, check out the [Getting Started Guide](./[getting_started_en.md](https://mmdetection.readthedocs.io/en/latest/get_started.html)) to learn how to:
 
 1. Run your first object detection
 2. Use pre-trained models for inference
@@ -110,7 +110,7 @@ Try reducing the batch size in your config file, or use a smaller input image si
 
 This installation method has been tested on:
 
-- Windows 10 + CUDA 11.6
+- Windows 10 + CUDA 11.8
 
 ## 👥 Contributing
 
