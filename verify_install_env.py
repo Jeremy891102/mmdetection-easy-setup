@@ -22,7 +22,7 @@ def main():
     # check python version
     print(f"Python version: {sys.version.split()[0]}")
     
-    # 檢查關鍵模組
+    # check important packages
     modules_to_check = {
         "torch": "PyTorch",
         "mmcv": "MMCV",
@@ -38,7 +38,7 @@ def main():
         if success:
             print(f"{display_name} version: {version}")
             
-            # 特殊檢查 PyTorch CUDA
+            # check PyTorch CUDA
             if module_name == "torch":
                 import torch
                 cuda_available = torch.cuda.is_available()
