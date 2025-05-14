@@ -53,7 +53,7 @@ mim install "mmcv==2.1.0"
 ```bash
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
-pip install -v -e . -r requirements/tracking.txt
+pip install -v -e .
 # "-v" means verbose, or more output
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
@@ -91,7 +91,7 @@ mim install "mmcv==2.1.0"
 ```bash
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
-pip install -v -e . -r requirements/tracking.txt
+pip install -v -e .
 # "-v" means verbose, or more output
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
