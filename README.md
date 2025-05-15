@@ -74,7 +74,7 @@ cd easy-mmdetection-setup
 2. Create virtual environment
 ```bash
 python -m venv mmdetection_easy_setup
-source mmdetection_easy_setup/bin/activate  # Linux/Mac
+source mmdetection_easy_setup/bin/activate  # Linux
 # or
 mmdetection_easy_setup\Scripts\activate  # Windows
 ```
