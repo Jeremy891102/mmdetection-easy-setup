@@ -110,7 +110,7 @@ python verify_install.py
 ### 方法 3：一鍵安裝腳本
 
 ```bash
-# Linux/Mac
+# Linux
 ./install.sh
 
 # Windows
