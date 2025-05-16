@@ -22,7 +22,8 @@ This repository provides a simplified approach to installing MMDetection, design
 > ⚠️ If you plan to use a different version (e.g., Python 3.10 or CUDA 12),  
 > please manually align compatible versions of **PyTorch**, **MMCV**, and **MMEngine** to avoid conflicts.  
 > Incompatible versions may cause installation issues or runtime errors.  
->
+> If you are using a 50-series GPU might cause some error!!
+> 
 > ✅ Recommended references:
 > - [PyTorch Installation Guide](https://pytorch.org/get-started/locally/)
 > - [MMCV Compatibility Table](https://github.com/open-mmlab/mmcv#installation)
