@@ -24,6 +24,7 @@
 > ⚠️ 如果你使用的是 **不同版本的 Python 或 CUDA**（例如 Python 3.10 或 CUDA 12），  
 >    請務必自行確認 **PyTorch、MMCV、MMEngine** 等相關套件的版本相容性。  
 >    不相容可能會導致安裝失敗或執行錯誤。
+>    GPU 50系列會有編譯錯誤的情形，需要自行編譯
 >
 > ✅ 建議參考以下資源：
 > - [PyTorch 官方安裝指引](https://pytorch.org/get-started/locally/)
